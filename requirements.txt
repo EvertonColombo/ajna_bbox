@@ -1,0 +1,4 @@
+labelImg
+mkdocs
+pymongo
+tensorflow
