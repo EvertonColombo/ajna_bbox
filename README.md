@@ -38,11 +38,10 @@ Os caminhos do arquivo de configuração abaixo e da linha de comando devem ser 
 
 Editar o pipeline.config (num_classes e *_path) conforme exemplo em bases/models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/pipepline.config
 
-Rodar o comando para treinamento:
+Rodar o comando para treinamento (mudando os caminhos para os caminhos locais):
 ```
 #  python models/research/object_detection/model_main_tf2.py \
     --model_dir=/home/ivan/PycharmProjects/ajna_bbox/bases/models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/ \
-    --checkpoint_dir=/home/ivan/PycharmProjects/ajna_bbox/bases/models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/checkpoint \
     --alsologtostderr \
     --pipeline_config_path=bases/models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/pipeline.config \
     --use-tpu=true
